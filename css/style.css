@@ -2,15 +2,10 @@
     font-family: "Bitcount Single", system-ui;
 }
 
-.navbar div.container-fluid{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.navbar img{
-    width: 15%;
-    height: 15%;
+.navbar-collapse{
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
 }
 
 main{
@@ -85,18 +80,9 @@ h1{
     text-align: center;
 }
 
-.carousel-item{
-    max-width: 700px;
-    margin: 0 auto;
-    background-color: transparent;
-}
-
-.carousel-item img{
-    max-width: 700px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+.calesita{
+    width: 60%;
+    margin: 10px auto;
 }
 
 /* Icono whatsapp */
@@ -135,7 +121,9 @@ h1{
     align-items: center;
 }
 
-
+.redes-sociales{
+    justify-content: space-around;
+}
 
 
 /* Style Nosotros */
