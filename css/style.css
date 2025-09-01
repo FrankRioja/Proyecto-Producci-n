@@ -313,3 +313,60 @@ h1{
     color: white;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
+
+
+
+
+
+
+
+
+
+
+
+/*Modo resposive*/
+/* Estilos por defecto (para pantallas pequeñas/móviles) */
+
+@media screen and (max-width: 768px){
+    h1 {
+  color: rgb(44, 44, 44);
+  text-align: center;
+  font-size: 2.5em; /* Un tamaño de fuente adecuado para móviles */
+}
+
+.texto h2 {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+/* El contenedor: apila los elementos verticalmente */
+.contenedor {
+  display: flex;
+  flex-direction: column; /* Apila el video y el texto uno encima del otro */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 0 15px; /* Añade un pequeño espacio a los lados para que no se pegue al borde */
+}
+
+/* El video: se ajusta al ancho de la pantalla */
+.video {
+  width: 100%; /* El video ocupa todo el ancho disponible */
+  max-width: 500px; /* Le ponemos un límite para que no se vea gigantesco en pantallas muy grandes */
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+/* El texto: se ajusta y justifica para una mejor lectura */
+.texto {
+  text-align: justify;
+}
+
+/* El separador: también se ajusta */
+.separador {
+  width: 80%; /* Más pequeño para que se vea mejor */
+  margin: 10px auto; /* Centrado */
+}
+
+}
