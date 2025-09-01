@@ -1,11 +1,15 @@
-.navbar{
-    font-family: "Bitcount Single", system-ui;
+.encabezado{
+    background-image: url(../assets/img/bodafondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: sticky;
 }
 
-.navbar-collapse{
-    flex-grow: 1;
-    flex-basis: auto;
-    flex-shrink: 1;
+.navbar{
+    font-family: "Bitcount Single", system-ui;
+    background-color: #00000000 !important;
 }
 
 main{
@@ -115,15 +119,12 @@ h1{
 
 .redes-sociales{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     width: 15%;
     height: 15%;
     align-items: center;
 }
 
-.redes-sociales{
-    justify-content: space-around;
-}
 
 
 /* Style Nosotros */
@@ -142,8 +143,173 @@ h1{
     font-size: 15px;
 }
 
+
+
 /* Formulario*/
-.formulario{
+.titulo{
     background-image: url(../assets/img/fondoboda\ \(1\).jpg);
     color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo h1{
+    color: #000000;
+}
+
+
+
+/*Style boda*/
+.lineatemporal h2{
+    text-align: center;
+}
+.lineatemporal h3{
+    text-align: center;
+}
+.lineatemporal p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+   text-align: center;
+   margin-left: 20%;
+   margin-right: 20%;
+}
+
+.timeline{
+  width: 800px;
+  height: 20px;
+  list-style: none;
+  text-align: justify;
+  margin: 80px auto;
+  background: linear-gradient(to bottom,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0) 45%,
+    rgb(161, 161, 161) 51%,
+    rgba(255,255,255,0) 57%,
+    rgba(255,255,255,0) 100%);
+}
+.timeline:after {
+  display: inline-block;
+  content: "";
+  width: 100%;
+}
+.timeline li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #9b9b9b;
+  text-align: center;
+  line-height: 1.2;
+  position: relative;
+  border-radius: 50%;
+}
+.timeline li:before {
+  display: inline-block;
+  content: attr(data-year);
+  font-size: 26px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline li:nth-child(odd):before {
+  top: -40px;
+}
+.timeline li:nth-child(even):before {
+  bottom: -40px;
+}
+.timeline li:after {
+  display: inline-block;
+  content: attr(data-text);
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline li:nth-child(odd):after {
+  bottom: 0;
+  margin-bottom: -10px;
+  transform: translate(-50%, 100%);
+}
+.timeline li:nth-child(even):after {
+  top: 0;
+  margin-top: -10px;
+  transform: translate(-50%, -100%);
+}
+
+.preboda{
+    border: #000000 solid;
+    height: 550px;
+    width: 1286px;
+    position: relative;
+    margin-left: 2.7%;
+    background-color: #ffffff;
+}
+
+.preboda h3{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 40%;
+    margin-left: 45%;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.preboda p{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.contenedor-boda{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 45%;
+    margin-top: 5%;
+}
+
+.item img{
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.ceremonia img{
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70%;
+    position: relative;
+}   
+
+.caja1 h3{
+    position: absolute;
+    text-align: center;
+    left: 45%;
+    top: 350%;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.caja1 p{
+    position: absolute;
+    text-align: center;
+    top: 360%;
+    left: 40%;
+    right: 40%;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
