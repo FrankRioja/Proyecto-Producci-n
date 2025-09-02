@@ -372,44 +372,37 @@ h1{
 
 /*Bodas*/
 @media screen and (max-width: 768px) {
-    .lineatemporal h2, .lineatemporal h3, .lineatemporal h1 {
-  text-align: center;
+
+  .lineatemporal p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+  }
+  .timeline {
+    width: 100%;
+    height: auto;
+    background: none; /* Elimina la línea de fondo para móviles */
+    margin: 20px auto;
+    display: block; /* Vuelve a un comportamiento de bloque para que los elementos se apilen */
+  }
+  .timeline li {
+    display: block; /* Cada elemento de la lista ocupa su propia línea */
+    width: 90%;
+    margin: 10px auto;
+  }
+  .timeline li:before, .timeline li:after {
+    position: static; /* Elimina el posicionamiento absoluto */
+    transform: none;
+    display: block;
+    margin-top: 5px;
+  }
+  .timeline li:nth-child(odd):before, .timeline li:nth-child(even):before,
+  .timeline li:nth-child(odd):after, .timeline li:nth-child(even):after {
+    top: auto;
+    bottom: auto;
+  }
 }
 
-.lineatemporal p {
-  padding: 0 15px;
-  text-align: justify;
-  margin: 10px 0;
-}
-
-/* Estilos de la Línea de Tiempo */
-
-.timeline-wrapper {
-  overflow-x: auto; /* Habilita el desplazamiento horizontal */
-  -webkit-overflow-scrolling: touch; /* Mejora el rendimiento en iOS */
-}
-
-
-.timeline {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 20px auto;
-  background: none; 
-}
-.timeline:after, .timeline li:before, .timeline li:after {
-  content: none;
-}
-.timeline li {
-  text-align: center;
-  margin: 10px 0;
-  padding: 10px;
-  background: #f0f0f0;
-  border-radius: 8px;
-  width: 90%;
-}
 /* Estilos de las imágenes y sus contenedores */
 .preboda, .ceremonia {
   position: relative;
