@@ -326,12 +326,13 @@ h1{
 
 /*Modo resposive*/
 /* Estilos por defecto (para pantallas pequeñas/móviles) */
+/*Inicio*/
 
 @media screen and (max-width: 768px){
     h1 {
   color: rgb(44, 44, 44);
   text-align: center;
-  font-size: 2.5em; /* Un tamaño de fuente adecuado para móviles */
+  font-size: 2.5em; 
 }
 
 .texto h2 {
@@ -339,18 +340,18 @@ h1{
   text-align: center;
 }
 
-/* El contenedor: apila los elementos verticalmente */
+
 .contenedor {
   display: flex;
-  flex-direction: column; /* Apila el video y el texto uno encima del otro */
-  align-items: center; /* Centra los elementos horizontalmente */
-  padding: 0 15px; /* Añade un pequeño espacio a los lados para que no se pegue al borde */
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
 
 /* El video: se ajusta al ancho de la pantalla */
 .video {
-  width: 100%; /* El video ocupa todo el ancho disponible */
-  max-width: 500px; /* Le ponemos un límite para que no se vea gigantesco en pantallas muy grandes */
+  width: 100%;
+  max-width: 500px;
 }
 
 .video video {
@@ -358,15 +359,104 @@ h1{
   height: auto;
 }
 
-/* El texto: se ajusta y justifica para una mejor lectura */
 .texto {
   text-align: justify;
 }
 
-/* El separador: también se ajusta */
 .separador {
-  width: 80%; /* Más pequeño para que se vea mejor */
-  margin: 10px auto; /* Centrado */
+  width: 80%; 
+  margin: 10px auto;
 }
 
+}
+
+/*Bodas*/
+@media screen and (max-width 768) {
+    .lineatemporal h2, .lineatemporal h3, .lineatemporal h1 {
+  text-align: center;
+}
+
+.lineatemporal p {
+  padding: 0 15px;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+/* Estilos de la Línea de Tiempo */
+.timeline {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 20px auto;
+  background: none; 
+}
+.timeline:after, .timeline li:before, .timeline li:after {
+  content: none;
+}
+.timeline li {
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  width: 90%;
+}
+/* Estilos de las imágenes y sus contenedores */
+.preboda, .ceremonia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+}
+
+.preboda img, .ceremonia img {
+  width: 100%;
+  height: auto;
+  position: static;
+}
+
+.preboda h3, .preboda p, .caja1 h3, .caja1 p {
+  position: static;
+  text-align: center;
+  color: black;
+  text-shadow: none;
+  margin: 5px 0;
+  padding: 0 15px;
+}
+
+.contenedor-boda {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+}
+
+
+/*Nosotros*/
+@media screen and (max-width 768) {
+    .ubicacion{
+        width: 100%;
+    }
 }
