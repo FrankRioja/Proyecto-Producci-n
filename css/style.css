@@ -383,6 +383,13 @@ h1{
 }
 
 /* Estilos de la Línea de Tiempo */
+
+.timeline-wrapper {
+  overflow-x: auto; /* Habilita el desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Mejora el rendimiento en iOS */
+}
+
+
 .timeline {
   list-style: none;
   display: flex;
