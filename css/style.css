@@ -371,7 +371,7 @@ h1{
 }
 
 /*Bodas*/
-@media screen and (max-width 768) {
+@media screen and (max-width: 768px) {
     .lineatemporal h2, .lineatemporal h3, .lineatemporal h1 {
   text-align: center;
 }
@@ -455,7 +455,7 @@ h1{
 
 
 /*Nosotros*/
-@media screen and (max-width 768) {
+@media screen and (max-width: 768px) {
     .ubicacion{
         width: 100%;
     }
